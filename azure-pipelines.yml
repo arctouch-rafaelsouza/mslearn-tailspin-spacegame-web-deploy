@@ -134,7 +134,7 @@ stages:
   - deployment: Deploy
     pool:
       vmImage: 'ubuntu-18.04'
-    environments: staging
+    environment: staging
     variables:
     - group: 'Release'
     strategy:
