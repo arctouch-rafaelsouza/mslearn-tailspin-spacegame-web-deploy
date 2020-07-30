@@ -152,7 +152,7 @@ stages:
         sudo apt-get install xsltproc
         xsltproc JMeter2JUnit.xsl Results.xml > JUnit.xml
       displayName: 'Transform JMeter output to JUnit'
-    - task: PublishTestResult@2
+    - task: PublishTestResults@2
       inputs:
         testResultsFormat: JUnit
         testResultsFiles: JUnit.xml
